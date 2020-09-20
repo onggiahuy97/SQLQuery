@@ -25,7 +25,7 @@ struct ActionsView: View {
                 showQuery = true
             }) {
                 Text("Query 🔎")
-                    .foregroundColor(Color.blue.opacity(0.9))
+                    .foregroundColor(Color.green.opacity(0.9))
             }
             .alert(isPresented: $showQuery) {
                 Alert(title: Text("Your query"), message: Text(model.generateQuery()), primaryButton: .cancel(Text("Copy"), action: {

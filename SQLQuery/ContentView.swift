@@ -18,7 +18,7 @@ struct ContentView: View {
                 .padding(5)
                 .padding(.horizontal, 5)
                 .foregroundColor(.white)
-                .background(LinearGradient(gradient: Gradient(colors: [.red, .blue]), startPoint: .leading, endPoint: .trailing))
+                .background(LinearGradient(gradient: Gradient(colors: [.green, .orange]), startPoint: .leading, endPoint: .trailing))
                 .cornerRadius(20)
             
             Picker("", selection: $selected) {

@@ -13,7 +13,7 @@ struct headerModifier: ViewModifier {
             .font(.system(size: 14, weight: .bold))
             .padding(4)
             .foregroundColor(.white)
-            .background(Color.blue.opacity(0.4))
+            .background(Color.green.opacity(0.7))
             .cornerRadius(5)
     }
 }
