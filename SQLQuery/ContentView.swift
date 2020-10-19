@@ -36,12 +36,12 @@ struct ContentView: View {
             }
         }
         .padding()
-        .frame(width: 500)
+//        .frame(width: 500)
     }
     
     enum Selected: String, CaseIterable {
         case general = "General"
-        case short = "Short cut"
+        case short = "Shortcuts"
     }
 }
 

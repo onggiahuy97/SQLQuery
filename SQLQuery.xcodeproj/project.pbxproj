@@ -16,6 +16,8 @@
 		3E1C67872516E684008A62F1 /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1C67862516E684008A62F1 /* ShortcutsView.swift */; };
 		3E1C678B2516E8F5008A62F1 /* TableColunm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1C678A2516E8F5008A62F1 /* TableColunm.swift */; };
 		3E1C678E2516E90A008A62F1 /* ShortcutQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1C678D2516E90A008A62F1 /* ShortcutQuery.swift */; };
+		3E2143392526DA1300C093C7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2143382526DA1300C093C7 /* LoginController.swift */; };
+		3E21433C2526E38F00C093C7 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21433B2526E38F00C093C7 /* Alert+Extension.swift */; };
 		3EF331BC2514765000240776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF331BB2514765000240776 /* AppDelegate.swift */; };
 		3EF331BE2514765000240776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF331BD2514765000240776 /* ContentView.swift */; };
 		3EF331C02514765100240776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EF331BF2514765100240776 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		3E1C67862516E684008A62F1 /* ShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsView.swift; sourceTree = "<group>"; };
 		3E1C678A2516E8F5008A62F1 /* TableColunm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableColunm.swift; sourceTree = "<group>"; };
 		3E1C678D2516E90A008A62F1 /* ShortcutQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutQuery.swift; sourceTree = "<group>"; };
+		3E2143382526DA1300C093C7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		3E21433B2526E38F00C093C7 /* Alert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
 		3EF331B82514765000240776 /* SQLQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF331BB2514765000240776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EF331BD2514765000240776 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				3E1C677F2516E3B1008A62F1 /* View+Extension.swift */,
+				3E21433B2526E38F00C093C7 /* Alert+Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				3E1C67752516B050008A62F1 /* SelectColumnsView.swift */,
 				3E1C67782516B095008A62F1 /* SelectConditions.swift */,
 				3E1C677B2516B101008A62F1 /* ActionsView.swift */,
+				3E2143382526DA1300C093C7 /* LoginController.swift */,
 				3EF331BF2514765100240776 /* Assets.xcassets */,
 				3EF331C42514765100240776 /* Main.storyboard */,
 				3EF331C72514765100240776 /* Info.plist */,
@@ -158,7 +164,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					3EF331B72514765000240776 = {
 						CreatedOnToolsVersion = 12.0;
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1C678E2516E90A008A62F1 /* ShortcutQuery.swift in Sources */,
+				3E21433C2526E38F00C093C7 /* Alert+Extension.swift in Sources */,
 				3E1C677C2516B101008A62F1 /* ActionsView.swift in Sources */,
 				3EF331BE2514765000240776 /* ContentView.swift in Sources */,
 				3E1C678B2516E8F5008A62F1 /* TableColunm.swift in Sources */,
@@ -214,6 +221,7 @@
 				3E1C67762516B050008A62F1 /* SelectColumnsView.swift in Sources */,
 				3E1C67802516E3B1008A62F1 /* View+Extension.swift in Sources */,
 				3E1C67732516AFC0008A62F1 /* SelectDataView.swift in Sources */,
+				3E2143392526DA1300C093C7 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SQLQuery/SQLQuery.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SQLQuery/Preview Content\"";
@@ -376,6 +385,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SQLQuery/SQLQuery.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SQLQuery/Preview Content\"";

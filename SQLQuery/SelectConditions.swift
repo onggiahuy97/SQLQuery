@@ -17,10 +17,37 @@ struct SelectConditions: View {
                     .modifier(headerModifier())
                 Spacer()
             }
+            
             HStack {
-                Text("Condition: ")
-                TextField("...", text: $model.query)
+                Toggle("COUNT:", isOn: $model.showCount)
+                TextField("...", text: $model.countQuery)
+                    .disabled(!model.showCount)
             }
+            
+            HStack {
+                Toggle("WHERE:", isOn: $model.showCondition)
+                TextField("...", text: $model.whereQuery)
+                    .disabled(!model.showCondition)
+            }
+            
+            HStack {
+                Toggle("GROUP:", isOn: $model.showGroupBy)
+                TextField("...", text: $model.groupByQuery)
+                    .disabled(!model.showGroupBy)
+            }
+            
+            HStack {
+                Toggle("HAVING", isOn: $model.showHaving)
+                TextField("...", text: $model.havingQuery)
+                    .disabled(!model.showHaving)
+            }
+            
+            HStack {
+                Toggle("ORDER:", isOn: $model.showOrderBy)
+                TextField("...", text: $model.orderByQuery)
+                    .disabled(!model.showOrderBy)
+            }
+            
         }
     }
 }
